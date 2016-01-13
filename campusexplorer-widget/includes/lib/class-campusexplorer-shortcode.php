@@ -11,7 +11,7 @@ class campusexplorer_Shortcode {
 		if ($ce_source){
 
 			$widget_settings =  ' data-ce-source="' . $ce_source ;
-			$widget_settings .= ($atts['sourcecode_append'] != '' ? '-' . $atts['sourcecode_append'] : ''); 
+			$widget_settings .= ($atts['sourcecode_append'] != '' ? '-' . $atts['sourcecode_append'] : '');
 			$widget_settings .= '"'; // end ce-source
 			$widget_settings .= ($atts['tracking'] != '' ? ' data-ce-tracking_code="' . $atts['tracking'] . '"'  : '');
 			$widget_settings .= ($atts['aos'] != '' ? ' data-ce-area_of_study="' . $atts['aos'] . '"'  : '');

@@ -33,9 +33,9 @@ class campusexplorer_Widget extends WP_Widget{
 		$ce_source = sanitize_title_with_dashes(get_option('ce_pub_source_code'));
 
 		if ($ce_source){
-			
+
 			$widget_settings =  ' data-ce-source="' . $ce_source ;
-			$widget_settings .= ($instance['sourcecode_append'] != '' ? '-' . $instance['sourcecode_append'] : ''); 
+			$widget_settings .= ($instance['sourcecode_append'] != '' ? '-' . $instance['sourcecode_append'] : '');
 			$widget_settings .= '"'; // end ce-source
 			$widget_settings .= ($instance['tracking'] != '' ? ' data-ce-tracking_code="' . $instance['tracking'] . '"'  : '');
 			$widget_settings .= ($instance['aos'] != '' ? ' data-ce-area_of_study="' . $instance['aos'] . '"'  : '');
@@ -43,7 +43,7 @@ class campusexplorer_Widget extends WP_Widget{
 			$widget_settings .= ($instance['college'] != '' ? ' data-ce-college="' . $instance['college'] . '"'   : '');
 			$widget_settings .= ($instance['header_text'] != '' ? ' data-ce-header_text="' . $instance['header_text'] . '"'  : '');
 			$widget_settings .= ($instance['intro_text'] != '' ? ' data-ce-intro_text="' . $instance['intro_text'] . '"'  : '');
-				
+
 			if ($instance['is_lightbox'] == 1){
 
 				$out = '<a class="campusexplorer-widget-launch" ';
@@ -116,9 +116,9 @@ class campusexplorer_Widget extends WP_Widget{
 	?>
 		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label> <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
 		<br /><small><?php _e( 'Title to display above the widget. Can be blank.' ); ?></small></p>
-		
+
 		<p><label for="<?php echo $this->get_field_id('header_text'); ?>"><?php _e('Header Text:'); ?></label> <input class="widefat" id="<?php echo $this->get_field_id('header_text'); ?>" name="<?php echo $this->get_field_name('header_text'); ?>" type="text" value="<?php echo $header_text; ?>" /></p>
-		
+
 		<p><label for="<?php echo $this->get_field_id('intro_text'); ?>"><?php _e('Intro Text:'); ?></label> <input class="widefat" id="<?php echo $this->get_field_id('intro_text'); ?>" name="<?php echo $this->get_field_name('intro_text'); ?>" type="text" value="<?php echo $intro_text; ?>" /></p>
 
 		<p><label for="<?php echo $this->get_field_id('aos'); ?>"><?php _e('Area of Study:'); ?></label> <input class="widefat" id="<?php echo $this->get_field_id('aos'); ?>" name="<?php echo $this->get_field_name('aos'); ?>" type="text" value="<?php echo $aos; ?>" />
@@ -148,7 +148,7 @@ class campusexplorer_Widget extends WP_Widget{
 	}
 
 
-	
+
 
 }
 
