@@ -37,7 +37,7 @@ class campusexplorer_Widget extends WP_Widget{
 			$widget_settings =  ' data-ce-source="' . $ce_source ;
 			$widget_settings .= ($instance['sourcecode_append'] != '' ? '-' . $instance['sourcecode_append'] : ''); 
 			$widget_settings .= '"'; // end ce-source
-			$widget_settings .= ($instance['tracking'] != '' ? ' data-ce-tracking="' . $instance['tracking'] . '"'  : '');
+			$widget_settings .= ($instance['tracking'] != '' ? ' data-ce-tracking_code="' . $instance['tracking'] . '"'  : '');
 			$widget_settings .= ($instance['aos'] != '' ? ' data-ce-area_of_study="' . $instance['aos'] . '"'  : '');
 			$widget_settings .= ($instance['concentration'] != '' ? ' data-ce-concentration="' . $instance['concentration'] . '"'  : '');
 			$widget_settings .= ($instance['college'] != '' ? ' data-ce-college="' . $instance['college'] . '"'   : '');
