@@ -17,6 +17,7 @@ class campusexplorer_Shortcode {
 			$widget_settings .= ($atts['aos'] != '' ? ' data-ce-area_of_study="' . $atts['aos'] . '"'  : '');
 			$widget_settings .= ($atts['concentration'] != '' ? ' data-ce-concentration="' . $atts['concentration'] . '"'  : '');
 			$widget_settings .= ($atts['college'] != '' ? ' data-ce-college="' . $atts['college'] . '"'   : '');
+			$widget_settings .= ($atts['theme'] != '' ? ' data-ce-theme="' . $atts['theme'] . '"'   : '');
 			$widget_settings .= ($atts['header_text'] != '' ? ' data-ce-header_text="' . $atts['header_text'] . '"'  : '');
 			$widget_settings .= ($atts['intro_text'] != '' ? ' data-ce-intro_text="' . $atts['intro_text'] . '"'  : '');
 

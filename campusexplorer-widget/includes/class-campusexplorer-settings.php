@@ -192,6 +192,13 @@ class campusexplorer_Settings {
 					'type'			=> 'text',
 					'default'		=> '',
 				),
+				array(
+					'id' 			=> 'theme',
+					'label'			=> __( 'Theme' , 'campusexplorer' ),
+					'description'	=> __( 'Advanced: This is for custom styling for the widget. Please talk to your account manager about setting this up.', 'campusexplorer' ),
+					'type'			=> 'text',
+					'default'		=> '',
+				),
 			
 			)
 		);

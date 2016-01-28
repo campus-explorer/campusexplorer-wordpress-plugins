@@ -1,4 +1,4 @@
-=== campusexplorer ===
+=== Campus Explorer Widget ===
 Contributors: kayceedub, jfreezece
 Tags: ce, campusexplorer, college
 Requires at least: 4.2
@@ -51,11 +51,20 @@ To learn more about Campus Explorer and how you can be a partner (and get paid),
 
 == Changelog ==
 
+= 1.1 =
+* 2016-01-28
+* Added theme field to widget and shortcode builder
+* Change ce-tracking data attribute to ce-tracking_code
+
 = 1.0 =
 * 2015-09-10
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.1 =
+* 2016-01-28
+* Added theme field to widget and shortcode builder to enable custom styles.
 
 = 1.0 =
 * 2015-09-10

@@ -4,15 +4,14 @@
  * Plugin URI: 
  * Description: Help your website users find their ideal college, while you earn a commision.
  * Author: Campus Explorer
- * Version: 1.0
+ * Version: 1.1
  * Requires at least: 4.2
  * Author URI: https://www.campusexplorer.com
  * License: GPLv2 or later
  * Text Domain: campusexplorer
  * Domain Path:
  *
- * Campus Explorer for WordPress
- * Copyright (C) 2015
+ * Copyright (C) 2015 - 2016
  *
  */
 

@@ -40,6 +40,7 @@ class campusexplorer_Widget extends WP_Widget{
 			$widget_settings .= ($instance['tracking'] != '' ? ' data-ce-tracking_code="' . $instance['tracking'] . '"'  : '');
 			$widget_settings .= ($instance['aos'] != '' ? ' data-ce-area_of_study="' . $instance['aos'] . '"'  : '');
 			$widget_settings .= ($instance['concentration'] != '' ? ' data-ce-concentration="' . $instance['concentration'] . '"'  : '');
+			$widget_settings .= ($instance['theme'] != '' ? ' data-ce-theme="' . $instance['theme'] . '"'  : '');
 			$widget_settings .= ($instance['college'] != '' ? ' data-ce-college="' . $instance['college'] . '"'   : '');
 			$widget_settings .= ($instance['header_text'] != '' ? ' data-ce-header_text="' . $instance['header_text'] . '"'  : '');
 			$widget_settings .= ($instance['intro_text'] != '' ? ' data-ce-intro_text="' . $instance['intro_text'] . '"'  : '');
@@ -87,6 +88,7 @@ class campusexplorer_Widget extends WP_Widget{
 		$instance['tracking'] = strip_tags( $new_instance['tracking'] );
 		$instance['header_text'] = strip_tags( $new_instance['header_text'] );
 		$instance['intro_text'] = strip_tags( $new_instance['intro_text'] );
+		$instance['theme'] = strip_tags( $new_instance['theme'] );
 		$instance['aos'] = sanitize_title_with_dashes( $new_instance['aos'] );
 		$instance['concentration'] = sanitize_title_with_dashes( $new_instance['concentration'] );
 		$instance['college'] = sanitize_title_with_dashes( $new_instance['college'] );
@@ -109,6 +111,7 @@ class campusexplorer_Widget extends WP_Widget{
 		$intro_text    = esc_attr( $instance['intro_text']);
 		$concentration = esc_attr( $instance['concentration'] );
 		$aos           = esc_attr( $instance['aos']);
+		$theme         = esc_attr( $instance['theme'] );
 		$college       = esc_attr( $instance['college']);
 		$is_lightbox   = esc_attr( $instance['is_lightbox']);
 		$lightbox_btn_text = esc_attr( $instance['lightbox_btn_text']);
@@ -143,6 +146,9 @@ class campusexplorer_Widget extends WP_Widget{
 
 		<p><label for="<?php echo $this->get_field_id('sourcecode_append'); ?>"><?php _e('Source Code Suffix:'); ?></label> <input class="widefat" id="<?php echo $this->get_field_id('sourcecode_append'); ?>" name="<?php echo $this->get_field_name('sourcecode_append'); ?>" type="text" value="<?php echo $sourcecode_append; ?>" />
 		<br /><small><?php _e( 'Advanced: If you require additional tracking aside from the tracking code, add it here. If you are unsure, leave blank.' ); ?></small></p>
+
+		<p><label for="<?php echo $this->get_field_id('theme'); ?>"><?php _e('Theme:'); ?></label> <input class="widefat" id="<?php echo $this->get_field_id('theme'); ?>" name="<?php echo $this->get_field_name('theme'); ?>" type="text" value="<?php echo $theme; ?>" />
+		<br /><small><?php _e( 'Advanced: Custom styling for the widget. Talk to your account manager about setting this up.' ); ?></small></p>
 
 <?php
 	}
