@@ -165,7 +165,7 @@ class campusexplorer {
 
 public function hook_javascript() {
 	// done this way instead of enqueue scripts because type='text/javascript' does not work.
-	$output='<script id="ce-widget-js" class="ce-widget-js-wp" async src="https://widget.campusexplorer.com/js/widget.js"></script>';
+	$output='<script data-cfasync="false" id="ce-widget-js" class="ce-widget-js-wp" async src="https://widget.campusexplorer.com/js/widget.js"></script>';
 
 	echo $output;
 }
